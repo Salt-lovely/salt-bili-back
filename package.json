@@ -1,0 +1,39 @@
+{
+  "name": "salt-template",
+  "version": "0.0.1",
+  "description": "盐的模板仓库",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "serve": "node script/serve.js",
+    "build": "node script/bundle.js"
+  },
+  "author": "salt-lovely",
+  "license": "MulanPSL-2.0",
+  "devDependencies": {
+    "@types/node": "^18.7.13",
+    "@types/react": "^17.0.49",
+    "@types/react-dom": "^17.0.13",
+    "@typescript-eslint/eslint-plugin": "^5.14.0",
+    "@typescript-eslint/parser": "^5.14.0",
+    "esbuild": "^0.14.25",
+    "esbuild-sass-plugin": "^2.2.4",
+    "eslint": "^8.10.0",
+    "open": "^8.4.0",
+    "postcss": "^8.4.8",
+    "postcss-modules": "^4.3.1",
+    "prettier": "^2.5.0",
+    "serve-http": "^1.0.7",
+    "sirv": "^2.0.2",
+    "typescript": "^4.6.2",
+    "yarn": "^1.22.17"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "salt-lib": "^0.0.5"
+  }
+}

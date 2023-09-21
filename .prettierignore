@@ -1,0 +1,7 @@
+**/*.md
+**/*.svg
+**/*.png
+**/*.gif
+**/*.jpg
+**/*.jpeg
+tsconfig.json
