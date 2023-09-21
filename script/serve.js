@@ -10,6 +10,7 @@ const $P = require('./tools/format-print')
 const $T = require('./tools/format-time')
 const { findPort } = require('./tools/port')
 const openUrl = require('./tools/openUrl')
+const banner = require('./banner.js');
 
 console.log($P('SaltProject - serve ' + $T(), 'grey'))
 ;(async () => {
@@ -36,6 +37,7 @@ console.log($P('SaltProject - serve ' + $T(), 'grey'))
       outfile: 'www/dist/index.js',
       sourcemap: true,
       watch: { onRebuild },
+      banner: { js: banner },
     },
     define: {
       'process.env.HISTORY': '"hash"',

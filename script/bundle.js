@@ -1,9 +1,10 @@
 /*
- * @LastEditTime: 2022-08-23 21:59:07
+ * @LastEditTime: 2023-09-21 23:32:38
  * @Description: 打包到 dist
  */
 const outFile = 'dist/bundle.js'
 const outMinFile = 'dist/bundle.min.js'
+const banner = require('./banner.js');
 
 const commonBuild = {
   props: {
@@ -11,6 +12,7 @@ const commonBuild = {
     minify: false,
     charset: 'utf8',
     legalComments: 'inline',
+    banner: { js: banner },
   },
   define: {
     __DEV__: 'false',
