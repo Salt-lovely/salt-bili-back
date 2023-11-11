@@ -11,6 +11,7 @@ module.exports = `// ==UserScript==
 // ==/UserScript==
 
 // 开源在 github https://github.com/Salt-lovely/salt-bili-back
+// 在 https://greasyfork.org/zh-CN/scripts/475203 安装
 
 /*
 Copyright (c) 2023 Salt_lovaly

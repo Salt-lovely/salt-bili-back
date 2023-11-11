@@ -4,9 +4,6 @@ import {
   OLD_UI,
   STORAGE_KEY,
   TRADITION_UI,
-  defaultDomain,
-  defaultExpires,
-  deleteCookie,
   genResetCookieFn,
   setCookie,
 } from './utils'
@@ -84,11 +81,16 @@ const [value] = readAndListen({
 setUICookie(value)
 
 console.log(
-  `
+//   `
+// 欢迎使用盐酱牌回到旧版B站主页脚本！
+
+// 你可以在屏幕底部找到切换按钮
+
+// 切换后需要刷新页面方可起效
+// `
+`
 欢迎使用盐酱牌回到旧版B站主页脚本！
 
-你可以在屏幕底部找到切换按钮
-
-切换后需要刷新页面方可起效
+下个版本将会在屏幕底部添加切换按钮
 `
 )
