@@ -1,4 +1,8 @@
-export const defaultExpires = 'Mon, 13 Sep 2077 11:45:14 GMT'
+import Cookie from 'js-cookie'
+
+const { remove, set } = Cookie
+
+export const defaultExpires = new Date(3398759114000)
 export const defaultDomain = '.bilibili.com'
 
 export const NEW_UI = 0
@@ -7,15 +11,6 @@ export const TRADITION_UI = 2
 
 export const STORAGE_KEY = 'salt-lovely-bili-tool'
 
-/**
- * 将指定 cookie 置空
- * @param name
- * @param domain
- */
-export function deleteCookie(name: string, domain = defaultDomain) {
-  // document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=${domain}`;
-  setCookie(name, '', defaultExpires, domain)
-}
 /**
  * 设定 cookie
  * @param name
@@ -29,7 +24,7 @@ export function setCookie(
   expires = defaultExpires,
   domain = defaultDomain
 ) {
-  document.cookie = `${name}=${value};expires=${expires};path=/;domain=${domain}`
+  set(name, value, { expires, domain })
 }
 /**
  *
@@ -48,7 +43,7 @@ export function genResetCookieFn({
   if (setMap)
     console.log(`将强制接管这些cookie: ${Object.keys(setMap).join(', ')}`)
   return () => {
-    if (delMap) delMap.forEach((c) => deleteCookie(c))
+    if (delMap) delMap.forEach((c) => remove(c))
     if (setMap) Object.keys(setMap).forEach((c) => setCookie(c, setMap[c]))
   }
 }
