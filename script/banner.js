@@ -16,7 +16,7 @@ module.exports = `// ==UserScript==
 // 在 https://greasyfork.org/zh-CN/scripts/475203 安装
 
 /*
-Copyright (c) 2023 Salt_lovaly
+Copyright (c) 2023 Salt_lovely
 回到旧版B站主页 is licensed under Mulan PSL v2.
 You can use this software according to the terms and conditions of the Mulan PSL v2.
 You may obtain a copy of Mulan PSL v2 at:
