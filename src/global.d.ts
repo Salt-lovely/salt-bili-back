@@ -6,3 +6,6 @@
  * @Description: 这个文件的功能
  * @FilePath: \salt-lib\src\global.d.ts
  */
+interface Window {
+  isSaltGoBackBilibiliInit: boolean
+}

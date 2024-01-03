@@ -8,7 +8,6 @@
     "lib"
   ],
   "scripts": {
-    "serve": "node script/serve.js",
     "build": "node script/bundle.js"
   },
   "author": "salt-lovely",

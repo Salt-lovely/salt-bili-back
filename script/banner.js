@@ -7,7 +7,9 @@ module.exports = `// ==UserScript==
 // @license      MulanPSL2
 // @match        https://*.bilibili.com/*
 // @icon         https://www.bilibili.com/favicon.ico
+// @run-at       document-start
 // @grant        none
+// @noframes
 // ==/UserScript==
 
 // 开源在 github https://github.com/Salt-lovely/salt-bili-back
